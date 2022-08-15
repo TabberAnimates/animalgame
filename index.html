@@ -23,9 +23,8 @@
         var x = rw();
         
         function rw() {
-        var data = geturldata(window.location.href);
-        console.log(data);
-        var wr = data;
+        var wr = geturldata();
+        console.log(wr);
         if (wr > 0) {
         document.getElementById('text1').innerHTML = 'Right!';
         } else {
@@ -33,9 +32,10 @@
         }
         }
         
-function geturldata(url) {
+function geturldata() {
 const address = window.location.href;
-  return address.replace('https://tabberanimates.github.io/animalgame/','')
+  return address.replace('https://tabberanimates.github.io/animalgame?wr=','')
+  
 }
         </script>
         </body>
