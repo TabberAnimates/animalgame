@@ -20,8 +20,10 @@
       <h1 id="text1" class="right"><h1>
       <h1 id="text2" class="wrong"><h1>
       <script>
-        function rw() {
-        let wr = Math.floor(Math.random());
+        var x = myFunction();
+        
+        function myFunction() {
+        var wr = Math.floor(Math.random() * 2);
         if (wr > 0) {
         document.getElementById('text1').innerHTML = 'Right!';
         } else {
