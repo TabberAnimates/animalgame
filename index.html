@@ -11,15 +11,24 @@
       h1 {
       font-family: "Arial", sans-serif;
       font-weight: bold;
-      font-size: 75px;
+      font-size: 100px;
       }
       </style>
     </head>
   <center>
     <body>
-      <h1 class="right">test</h>
-      <br>
-      <h1 class="wrong">test</h>
+      <h1 id="text1" class="right"><h1>
+      <h1 id="text2" class="wrong"><h1>
+      <script>
+        function rw() {
+        let wr = Math.floor(Math.random());
+        if (wr > 0) {
+        document.getElementById('text1').innerHTML = 'Right!';
+        } else {
+        document.getElementById('text2').innerHTML = 'Wrong!';
+        }
+        }
+        </script>
         </body>
     </center>
 </html>
