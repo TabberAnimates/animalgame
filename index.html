@@ -21,22 +21,21 @@
       <h1 id="text2" class="wrong"><h1>
       <script>
         var x = rw();
-        
+
         function rw() {
-        var wr = geturldata();
-        console.log(wr);
-        if (wr > 0) {
-        document.getElementById('text1').innerHTML = 'Right!';
-        } else {
-        document.getElementById('text2').innerHTML = 'Wrong!';
+            var wr = geturldata();
+            console.log(wr);
+            if (wr > 0) {
+                document.getElementById('text1').innerHTML = 'Right!';
+            } else {
+                document.getElementById('text2').innerHTML = 'Wrong!';
+            }
         }
+
+        function geturldata() {
+            let params = new URLSearchParams(window.location.search)
+            return params.get("wr")
         }
-        
-function geturldata() {
-const address = window.location.href;
-  return address.replace('https://tabberanimates.github.io/animalgame/?wr=','')
-  
-}
         </script>
         </body>
     </center>
